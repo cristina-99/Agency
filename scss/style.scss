@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+button{
+    border: 2px solid black;
+    padding: 6px 10px;
+    // :hover{
+    //     background-color: black;
+    //     color: white;
+    //     transition: .5s all ease-in-out;
+    // }
+}
+.Branding-text{
+    font-family: 'Playfair Display', serif;
+}
+
+.marginLeft{
+    margin-left: -50px;
+}
+.img-circle{
+    position: relative;
+	height: 70vh;
+    width: 80%;
+	background: #fff;
+	filter: contrast(5);
+
+	&::before {
+		position: absolute;
+		top: 0; right: 0; bottom: 0; left: 0;
+		background: 
+			radial-gradient(#000, transparent) 1em 1em/ 0.5em 0.5em space;
+		-webkit-mask: var(--mask);
+						mask: var(--mask);
+		content: ''
+	}
+}
